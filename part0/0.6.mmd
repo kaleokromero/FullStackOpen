@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa \n JSON {content: "foo" date: "bar"}
+server-->browser: JSON {"message":"note created"}
