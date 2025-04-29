@@ -1,0 +1,24 @@
+.notification {
+    position: relative;
+    border-radius: 10px  ;
+    border: 2px solid ;
+    text-align: center;
+    background-color: lightgray;
+    width: 50%;
+    color: green;
+    border: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.error {
+    position: relative;
+    color: red;
+    border-radius: 10px  ;
+    border: 2px solid;
+    text-align: center;
+    background-color: lightgray;
+    width: 50%;
+    border: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
