@@ -1,6 +1,6 @@
-import './index.css'
+import '../index.css'
 
-const Notification = ({ message }) => {
+const NotificationAlert = ({ message }) => {
   if (!message) {
     return null
   }
@@ -21,8 +21,11 @@ const ErrorAlert = ({ text }) => {
   )
 }
 
-export function Notification(message, text) {
+export default function Notification({message, text}) {
     return (
-        
+      <div>
+        <ErrorAlert text={message}/>
+        <NotificationAlert message={text}/>
+      </div>
     )
 }

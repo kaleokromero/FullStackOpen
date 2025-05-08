@@ -13,13 +13,13 @@ const App = () => {
   const [username, setUsername] = useState(null)
   const [token, setToken] = useState('')
 
-  // useEffect(() => {
-  //   blogService
-  //     .getAll()
-  //     .then(initialBlogs => {
-  //       setBlogs(initialBlogs)
-  //     })
-  // }, [])
+  useEffect(() => {
+    blogService
+      .getAll()
+      .then(initialBlogs => {
+        setBlogs(initialBlogs)
+      })
+  }, [])
 
   const handleLogin =  async (event) => {
     event.preventDefault()
@@ -91,7 +91,7 @@ const App = () => {
 
   return (
     <div>
-       <Notifications message={message} text={text}/>
+       <Notifications message={notificationMessage} text={errorMessage}/>
 
       <h2>blogs</h2>
     
